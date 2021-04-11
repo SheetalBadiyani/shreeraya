@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Welcoem To Shree Raya Developers</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.js"></script>
+<script type="text/javascript" src="js/jquery_002.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/clip.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+    <!--[if ie 6]>
+       <script type="text/javascript">
+        	window.location="ie6.html";
+   		</script>
+    <![endif]-->
+
+<script type="text/javascript">
+var bgTime = 6000; // Background Image/Video animation display duration (ms)
+var bgPaused=false; // Background Image/Video animation paused
+var menuTime = 100; // menu delay (ms)
+var autoPlay = false; // Background audio autoplay
+var loop = false; // Background audio loop or next song
+var drawActions = true; // Enable or Disable draw actions
+var videoLoop = true; // True ise bg pause ise video repeat eder degilse durur
+var muteWhilePlayVideo = true; // True ise video baslayinca playlis mute olur
+var frontPage = ""; // Front Page URL
+var btnSoundUrlMp3 = ''; // Button Hover Sound
+var btnSoundUrlOgg = ''; // Button Hover Sound
+var NormalFade = true; // Normal fade or animated bg image
+var videoMuted = false; // Star bg video mute
+var loopBg = true; //bg items loop
+</script>
+
+<!-- -->
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8">
+<script src="js/jquery_003.js" type="text/javascript" charset="utf-8"></script>
+<!-- -->
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		if (!$.browser.opera) {
+    
+			// select element styling
+			$('select.select').each(function(){
+				var title = $(this).attr('title');
+				if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+				$(this)
+					.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+					.after('<span class="select">' + title + '</span>')
+					.change(function(){
+						val = $('option:selected',this).text();
+						$(this).next().text(val);
+						})
+			});
+
+		};
+		
+	});
+</script>
+</head>
+
+<body>
+<div style="width: 1440px; height: 737px; opacity: 1;" id="body-wrapper">
+	<!-- slide rotator -->
+  <div id="bgImage"><div id="bgImageWrapper"><img style="opacity: 1; left: 0px; top: -25px; width: 1440px; height: 787px;" class="new source" src="images/aromaprooject-view.jpg" height="700" width="1280"></div></div>
+	<!--<div id="bgPattern"></div>-->
+	<div style="display: none;" id="dim"></div>
+
+	<!-- slider-->
+	<ul style="left: 719px; width: 2px; bottom: -50px;" id="bgImages">
+    	<li class="active"><a href="images/intro-img1.jpg" title=""></a></li>
+		<li class=""><a href="images/intro-img2.jpg" title=""></a></li>
+        <li class=""><a href="images/intro-img3.jpg" title=""></a></li>
+        <li class=""><a href="images/intro-img4.jpg" title=""></a></li>
+		<li class=""><a href="images/intro-img5.jpg" title=""></a></li>
+        <li class=""><a href="images/intro-img6.jpg" title=""></a></li>
+	</ul>
+	<!-- main menu -->
+	    <!--news ticker --><!-- quick move -->
+<div style="position:absolute; right:100px; margin-top:29px; background:#06C; ">
+        	 <script type="text/javascript">
+                            	function loadPage(list) {
+                                	location.href=list.options[list.selectedIndex].value
+                                }
+             </script>
+            <form method="post" action="#" style="margin:0;padding:0;">
+							<select style="z-index: 10; opacity: 0;" class="select" name="file"  onchange="loadPage(this.form.elements[0])">
+							<option value="#" selected="selected">Select Project</option>
+							<optgroup label="PANVEL" class="combolabel">
+                            <option value="#">RAYA CITY</option>
+                            <option value="#">RAYA EXOTICA</option>
+							<option value="#">AAKRULI SHREE NIWAS</option>
+							<option value="#">SHREE KUNJ @ AKRULI</option>
+							<option value="#">SHREE NIWAS USARLI</option>
+							</optgroup>
+                            
+							<!--<optgroup label="OTHER" class="combolabel">-->
+							</optgroup>
+							</select>
+          </form>
+        </div>
+<div id="menu-container">
+		<!-- Manglam Group Logo -->
+		<div id="logo">
+			<a href="#"><img src="images/logo.png" title="Manglam Group"></a>
+        </div>
+		<div class="clearfix"></div>
+		<!--end logo-->
+        <div style="clear:both;"></div>
+		<div id="leftlinks">
+        	<ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="about-group.html">About Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                 <li><a href="career.html">Careers</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+		</div>
+        <div class="clearfix"></div>
+
+        <div class="quicklinks"></div>
+
+        <div class="clearfix"></div><br>
+  </div>
+	<!--end main menu -->
+    
+<!--footer -->
+<div id="footer">
+<div id="footertext">Shree Raya  Group, All rights reserved </div>
+<div id="poweredby">
+Powered by&nbsp;<a href="http://www.professionalwebworld.com/" target="_blank">Professional Web World</a></div>
+</div>
+
+</div>
+<!--end body wrapper -->
+<!-- loading logo  -->
+
+
+<!-- Please don't remove or change these elements -->
+<canvas style="display: none; opacity: 0;" id="circleC" width="80" height="80"></canvas>
+<div id="REF_ColorFirst"></div>
+<div id="REF_ColorSecond"></div>
+<!-- end -->
+<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("area[rel^='prettyPhoto']").prettyPhoto();
+				
+				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:6000, autoplay_slideshow: false});
+				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+		
+				$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+					custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+					changepicturecallback: function(){ initialize(); }
+				});
+
+				$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+					custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+					changepicturecallback: function(){ _bsap.exec(); }
+				});
+			});
+			  </script>
+
+<script language="javascript" type="text/javascript">
+	                        function popimg(imgname){
+		                        n_win = open("itemdisplaypop.asp?image="+imgname,"ThisWindow","toolbar=no,directories=no,menubar=no,scrollbars=yes,height=650,width=950");
+		                        n_win.document.close();
+	                        }
+</script>
+
+<!--Code End Here-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="js/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5361285-7");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<canvas style="display: none;" class="bgCanvas" id="canvasCGnZ8"></canvas></body></html>
